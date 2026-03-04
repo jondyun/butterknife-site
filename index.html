@@ -3,127 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butterknife - 3D Print Slicer for macOS</title>
+  <title>Butterknife – AI-Assisted 3D Print Slicer for macOS</title>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
-      color: #333;
+      background: #f5f7fa;
+      color: #222;
       line-height: 1.6;
     }
 
     header {
-      background: #4A90E2;
+      background: linear-gradient(135deg, #4A90E2, #357ABD);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      letter-spacing: -1px;
     }
 
     header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      opacity: 0.95;
     }
 
     main {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
     }
 
     .section {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
     }
 
     h2 {
       color: #4A90E2;
       margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .download-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: center;
     }
 
     .download-btn {
       display: inline-block;
-      padding: 16px 32px;
+      padding: 18px 36px;
       background: #4A90E2;
       color: white;
       font-weight: 600;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      transition: 0.2s ease;
     }
 
     .download-btn:hover {
       background: #357ABD;
+      transform: translateY(-2px);
+    }
+
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
     }
 
     ol {
+      margin-top: 1.5rem;
       margin-left: 1.5rem;
     }
 
     iframe {
-      max-width: 100%;
+      width: 100%;
+      max-width: 900px;
+      height: 500px;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
-      padding: 2rem 1rem;
-      border-top: 1px solid #ddd;
+      padding: 3rem 1rem;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Butterknife</h1>
-  <p>3D Print Slicer for macOS – simple, fast, and AI-assisted</p>
+  <p>AI-Assisted 3D Print Slicer for macOS</p>
 </header>
 
 <main>
+
   <!-- Download Section -->
   <section class="section">
-    <h2>Download & Setup</h2>
-    <a href="https://drive.google.com/uc?export=download&id=1J-TBUZe7mGrWFndvlRL5teKXlbaWC6Z4" 
-       class="download-btn" download>
-      Download Butterknife for macOS
-    </a>
-    <p>After downloading:</p>
+    <h2>Download</h2>
+
+    <div class="download-box">
+      <a href="https://github.com/jondyun/butterknife/releases/download/v0.2.0/Butterknife-mac.zip"
+         class="download-btn">
+        Download Butterknife v0.2.0 for macOS
+      </a>
+
+      <div class="note">
+        macOS only • Intel & Apple Silicon supported
+      </div>
+    </div>
+
+    <h3 style="margin-top:2rem;">Setup Instructions</h3>
     <ol>
-      <li>Unzip the file.</li>
-      <li>Drag <b>Butterknife.app</b> into your Applications folder.</li>
-      <li>Right-click → Open (first launch only, macOS security prompt).</li>
+      <li>Unzip the downloaded file.</li>
+      <li>Drag <strong>Butterknife.app</strong> into your Applications folder.</li>
+      <li>Download and install <strong>SuperSlicer</strong> if you don’t already have it.</li>
+      <li>Right-click Butterknife → Open (first launch only, due to macOS security).</li>
       <li>Locate SuperSlicer when prompted.</li>
-      <li>Start slicing your 3D models!</li>
+      <li>Start slicing your 3D models.</li>
     </ol>
   </section>
 
-  <!-- Video Walkthrough Section -->
+  <!-- Video Section -->
   <section class="section">
     <h2>Walkthrough</h2>
-    <iframe width="800" height="450"
-<<<<<<< HEAD
-            src="https://www.youtube.com/embed/CcLsM9preYI"
-            title="Butterknife Walkthrough"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-=======
+
+    <iframe
       src="https://www.youtube.com/embed/CcLsM9preYI"
+      title="Butterknife Walkthrough"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
->>>>>>> f427e68 (Google Drive download link)
     </iframe>
+
   </section>
+
 </main>
 
 <footer>
-  &copy; 2026 Jonathan Yun – Butterknife
+  © 2026 Jonathan Yun – Butterknife
 </footer>
 
 </body>
